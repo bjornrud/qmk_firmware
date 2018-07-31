@@ -1,3 +1,4 @@
+# testing
 os: linux
 dist: trusty
 sudo: required
@@ -33,7 +34,7 @@ addons:
     - diffutils
     - dos2unix
     - doxygen
-after_success: 
+after_success:
   bash util/travis_compiled_push.sh
 notifications:
   webhooks:
